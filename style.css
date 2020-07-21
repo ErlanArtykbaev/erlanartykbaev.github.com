@@ -115,6 +115,11 @@ main h1{
   flex-direction: column;
 }
 
+.item h3{
+  text-align: center;
+  margin: 20px 0 20px;
+}
+
 .item-img{
   width: 100%;
 }
@@ -168,9 +173,9 @@ main h1{
 /** foooter **********/
 
 footer{
-  background-color: #4c4c4c;
-  background-image: url('https://images.unsplash.com/photo-1485609315582-cfffa02888e8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
-  background-size: cover;
+  background-color: #222222;
+  background-image: url('https://images.unsplash.com/photo-1503726053343-f29b731e77d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80');
+  background-size: hover;
   background-repeat: no-repeat;
   background-position: center;
   padding-left: 30px;
