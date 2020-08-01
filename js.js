@@ -9,3 +9,14 @@ window.addEventListener('scroll', function(){
   bg.style.top = value * 0.40 + 'px';
   text.style.top = value * 1 + 'px';
 })
+
+function burger(){
+  const x = document.getElementById('myUrls')
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+
+}
+
