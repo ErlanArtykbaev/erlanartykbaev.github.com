@@ -106,6 +106,7 @@ main h1{
 
 .item{
   width: 40%;
+  background-color: #E9E9E9;
   padding: 15px;
   overflow: hidden;
   box-shadow:  0 0 10px rgba(0,0,0,0.5);
@@ -166,15 +167,15 @@ main h1{
 
 .images{
   display: flex;
-  width: 90%;
-  justify-content: space-around;
+  width: 100%;
+  justify-content: space-evenly;
   align-items: center;
   margin: 30px auto;
 }
 
 .sk-img{
-  width: 12%;
-  height: 14%;
+  width: 11%;
+  height: 13%;
 }
 
 /** foooter **********/
