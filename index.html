@@ -4,172 +4,151 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Pompiere&family=Ubuntu+Mono:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
   <title>Portfolio</title>
 </head>
 <body>
-  <header>
-    <nav>
-      <a class="logourl" href="https://erlanartykbaev.github.io">Portfolio</a>
-      <div id="myUrls">
-        <a class="urls" href="#contacts">contacts</a>
-        <a class="urls" href="#skills">skills</a>
-        <a class="urls" href="#github">github</a>
-      </div>
-      <div class="burger-menu" onclick="burger()" >&#9776;</div>  
-    </nav>
-    <img 
-    src="https://images.unsplash.com/photo-1505238680356-667803448bb6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
-    id="bg"
-    ></img>
-    <img id="react" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" alt="">
-    <h1 id="title">Hi, I'm Erlan</h1>
+  <header class="fixed h-14 top-0 left-0 right-0 pl-4 pr-4 header border-b">
+    <div class="flex w-80 justify-between" >
+      <img src="img/facebook-logo.svg"/>
+      <input class="border-none rounded-full w-full input-background my-2 px-4" placeholder="Search on Facebook" />
+    </div>
   </header>
-
-  <main>
-    <h1 id="github">Github</h1>
-    <div class="github-items">
-
-      <div class="items">
-        <div class="item">
-          <h3>Hacker site</h3>
-          <img class="item-img" src="img/hakersite.jpg" alt="">
-          <div class="item-tech">
-            <p>html</p>
-            <p>rect js</p>
-            <p>css</p>
-            <p>css animation</p>
-          </div>
-          <a href="https://github.com/ErlanArtykbaev/haker-site">go to github</a>
+  <main class="pt-14">
+    <!-- head information -->
+    <div class="bg-main-color w-full box-border">
+      <div class="w-3/5 mx-auto">
+        <!-- main photo -->
+        <div class="w-full h-3/5 overflow-hidden flex items-center justify-center rounded-b-lg">
+          <img src="img/react-main.png" class="">
         </div>
-
-        <div class="item">
-          <h3>someWeb</h3>
-          <img class="item-img" src="img/someweb.jpg" alt="">
-          <div class="item-tech">
-            <p>html</p>
-            <p>css</p>
-            <p>css adaptive</p>
-            <p>css animation</p>
-            <p>vanila js</p>
+        <!-- main short information and contact -->
+        <div class="flex justify-between px-8 pb-8 items-center">
+          <div class="flex justify-between items-center space-x-8">
+            <div class="w-40 h-40 rounded-full overflow-hidden -mt-8">
+              <img src="img/my-photo.png" class="w-full h-full" />
+            </div>
+            <div>
+              <div class="text-3xl">Erlan Artykbaev</div>
+              <div>
+                <div class="text-xl">Middle Front-End Developer</div>
+              </div>
+            </div>
           </div>
-          <a href="https://github.com/ErlanArtykbaev/someWeb">go to github</a>
-        </div>
-      </div>
-
-      <div class="items">
-        <div class="item">
-          <h3>O-mobile</h3>
-          <img class="item-img" src="img/omobile.jpg" alt="">
-          <div class="item-tech">
-            <p>css</p>
-            <p>html</p>
-            <p>css adaptive</p>
-            <p>react js</p>
-            <p>css animation</p>
-          </div>
-          <a href="https://github.com/ErlanArtykbaev/O-Mobile">go to github</a>
-        </div>
-
-
-        <div class="item">
-          <h3>Admin-panel</h3>
-          <img class="item-img" src="img/admin-panel.jpg" alt="">
-          <div class="item-tech">
-            <p>html</p>
-            <p>json server</p>
-            <p>css</p>
-            <p>react js</p>
-            <p>css adaptive</p>
-          </div>
-          <a href="https://github.com/ErlanArtykbaev/admin-panel">go to github</a>
-        </div>
-      </div>
-
-      <div class="items">
-        <div class="item">
-          <h3>Turing simulator</h3>
-          <img class="item-img" src="img/turing.jpg" alt="">
-          <div class="item-tech">
-            <p>css</p>
-            <p>js</p>
-            <p>turing algorythm</p>
-            <p>css animation</p>
-          </div>
-          <a href="https://github.com/justhaker7/turing_reactjs">go to github</a>
-        </div>
-
-        <div class="item">
-          <h3>Youtube with youtubeAPI(on development)</h3>
-          <img class="item-img" src="img/youtube-clone.png" alt="">
-          <div class="item-tech">
-            <p>html</p>
-            <p>css</p>
-            <p>axios</p>
-            <p>react js</p>
-            <p>youtubeAPI</p>
-          </div>
-          <div class="buttons">
-            <a href="https://github.com/ErlanArtykbaev/youtube-clone">go to github</a>
-            <a href="https://clone-bd837.web.app/">go to site</a>
+          <div class="flex flex-col items-end space-y-4">
+            <a
+              href="mailto://erlan.artykbaev@yahoo.com"
+              class="rounded-lg bg-blue-600 text-white px-6 py-2 font-semibold text-lg flex space-x-2 items-center hover:bg-blue-500"
+            >
+              <img src="img/mail.svg" />
+              <span class="w-full">Send E-mail</span>
+            </a>
+            <a
+              href="https://telegram.me/erik_2405"
+              class="rounded-lg bg-gray-600 text-white px-6 py-2 font-semibold text-lg flex space-x-2 items-center hover:bg-gray-500"
+            >
+              <img src="img/message.svg" />
+              <span class="w-full">Contact telegram</span>
+            </a>
           </div>
         </div>
       </div>
-
-			<div class="items">
-        <div class="item">
-          <h3>Fanki</h3>
-          <img class="item-img" src="img/fanki-task.png" alt="">
-          <div class="item-tech">
-            <p>scss</p>
-            <p>react</p>
-          </div>
-          <div class="buttons">
-						<a href="https://github.com/ErlanArtykbaev/fanki-task">go to github</a>
-						<a href="https://erlanartykbaev.github.io/fanki-task/">go to site</a>
-					</div>
-        </div>
-
-        <div class="item">
-          <h3>Arena games</h3>
-          <img class="item-img" src="img/arena.png" alt="">
-          <div class="item-tech">
-            <p>scss</p>
-            <p>react</p>
-            <p>redux</p>
-            <p>axios</p>
-            <p>redux-thunk</p>
-          </div>
-          <div class="buttons">
-						<a href="https://github.com/ErlanArtykbaev/pubg-ui">go to github</a>
-						<a href="https://arenagames.io/">go to site</a>
-					</div>
-        </div>
-			</div>
-
     </div>
 
-    <div id="skills">
-      <h1 class="skill">Skills</h1>
-      <div class="images">
-        <img class="sk-img" src="https://webref.ru/assets/images/book/html5.png" alt="html">
-        <img class="sk-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/544px-CSS3_logo_and_wordmark.svg.png" alt="css">
-        <img class="sk-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png" alt="js">
-        <img class="sk-img" src="https://ru.reactjs.org/logo-og.png" alt="react js">
-        <img class="sk-img" src="https://cdn.freebiesupply.com/logos/thumbs/2x/vim-logo.png" alt="vim">
-        <img class="sk-img" src="https://cdn.worldvectorlogo.com/logos/sass-1.svg" alt="preprocessor" class="sk-img">
-        <img class="sk-img" src="https://seeklogo.com/images/J/jest-logo-F9901EBBF7-seeklogo.com.png" alt="jest">
+    <div class="mt-4 px-8 w-3/5 mx-auto grid grid-cols-5 gap-4">
+      <!-- short info about me -->
+      <div class="col-start-1 col-end-3 bg-main-color p-6 rounded-lg">
+        <div class="text-2xl mb-4 font-semibold">Information</div>
+
+        <div class="text-xl mb-2 font-semibold">Contacts</div>
+        <div class="mb-4 flex flex-col space-y-2">
+          <a
+            target="_blank"
+            class="rounded-lg bg-gray-600 text-white px-4 py-2 flex space-x-2 items-center hover:bg-gray-500 w-max"
+            href="https://www.linkedin.com/in/erlan-artykbaev-91492917b"
+          >
+            <img class="w-6 h-6" src="img/linkedin.svg" />
+            <span>Linked.in</span>
+          </a>
+          <a
+            target="_blank"
+            class="rounded-lg bg-gray-600 text-white px-4 py-2 flex space-x-2 items-center hover:bg-gray-500 w-max"
+            href="tel:+996703411547"
+          >
+            <img src="img/phone.svg" />
+            <span>+996703411547</span>
+          </a>
+          <a
+            target="_blank"
+            class="rounded-lg bg-gray-600 text-white px-4 py-2 flex space-x-2 items-center hover:bg-gray-500 w-max"
+            href="mailto://erlan.artykbaev@yahoo.com"
+          >
+            <img src="img/mail.svg" />
+            <span>erlan.artykbaev@yahoo.com</span>
+          </a>
+          <a
+            target="_blank"
+            class="rounded-lg bg-gray-600 text-white px-4 py-2 flex space-x-2 items-center hover:bg-gray-500 w-max"
+            href="https://telegram.me/erik_2405"
+          >
+            <img src="img/message.svg" />
+            <span>telegram</span>
+          </a>
+        </div>
+
+        <div class="text-xl mb-2 font-semibold">Education</div>
+        <div class="mb-4">
+          <img />
+          <div>Computer Science at INAI.KG 2016-2021</div>
+        </div>
+
+        <div class="text-xl mb-2 font-semibold">Tech</div>
+        <div class="flex flex-wrap items-center gap-2 mb-4">
+          <span class="uppercase px-4 py-1 rounded-lg input-background">JS</span>
+          <span class="uppercase px-4 py-1 rounded-lg input-background">TS</span>
+          <span class="uppercase px-4 py-1 rounded-lg input-background">React</span>
+          <span class="uppercase px-4 py-1 rounded-lg input-background">Next</span>
+          <span class="uppercase px-4 py-1 rounded-lg input-background">Redux</span>
+          <span class="uppercase px-4 py-1 rounded-lg input-background">Saga</span>
+          <span class="uppercase px-4 py-1 rounded-lg input-background">Thunk</span>
+          <span class="uppercase px-4 py-1 rounded-lg input-background">leaflet.js</span>
+        </div>
+        <div></div>
+      </div>
+
+      <!-- detail information about me -->
+      <div class="col-start-3 col-end-6 space-y-4">
+
+        <!-- items, history post -->
+        <div class="bg-main-color p-6 rounded-lg">
+          <div class="flex justify-between items-center space-x-2 pb-2">
+            <img src="img/my-photo.png" class="rounded-full h-10 w-10"  />
+            <input placeholder="Start a post" class="border-none rounded-full w-full input-background py-2 px-4 hover:brightness-105" />
+          </div>
+          <div class="divider"></div>
+          <div class="flex justify-between items-center space-x-2 pt-2">
+            <div class="flex items-center space-x-2">
+              <img src="img/camera.svg" />
+              <span>Video</span>
+            </div>
+            <div class="flex items-center space-x-2">
+              <img src="img/album.svg" />
+              <span>Photo</span>
+            </div>
+            <div class="flex items-center space-x-2">
+              <img src="img/flag.svg" />
+              <span>Actions</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-main-color p-6 rounded-lg">
+          hello
+        </div>
+
       </div>
     </div>
   </main>
-
-  <footer>
-    <h1 id="contacts">Contacts</h1>
-    <p>Name: Artykbaev Erlan</p>
-    <p>github: <a href="https://github.com/ErlanArtykbaev">github erlan</a></p>
-    <p>e-mail: erik.2405@mail.ru</p>
-    <p>Phone: +996 703 41 15 47</p>
-  </footer>
-  <script src="js.js"></script>
 </body>
 </html>
 
