@@ -8,6 +8,7 @@ body{
   min-height: 100vh;
   color: #E4E6EB;
   background-color: #18191A;
+  padding-bottom: 1rem;
 }
 
 .h-42r {
@@ -27,10 +28,19 @@ body{
   background-color: #3A3B3C;
 }
 
+.comment-btns:hover {
+  background-color: #2b2d2e;
+}
+
 .divider {
   background-color: #3A3B3C;
   height: 1px;
   width: 100%;
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
+}
+
+ul, ol {
+  list-style: revert !important;
+  margin-left: 14px !important;
 }
