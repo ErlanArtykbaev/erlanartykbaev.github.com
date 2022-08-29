@@ -44,3 +44,15 @@ ul, ol {
   list-style: revert !important;
   margin-left: 14px !important;
 }
+
+.career {
+  border-bottom: 2px solid #E4E6EB;
+}
+
+.main-color {
+  color: #E4E6EB;
+}
+
+.w-55 {
+  width: 55%;
+}

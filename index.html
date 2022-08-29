@@ -8,10 +8,21 @@
   <title>Erlan Artykbaev</title>
 </head>
 <body>
-  <header class="fixed h-14 top-0 left-0 right-0 pl-4 pr-4 header border-b">
+  <header class="flex items-center justify-between fixed h-14 top-0 left-0 right-0 pl-4 pr-4 header border-b">
     <div class="flex w-80 justify-between" >
       <img src="img/facebook-logo.svg"/>
       <input class="border-none rounded-full w-full input-background my-2 px-4" placeholder="Search on Facebook" />
+    </div>
+    <div class="flex items-center justify-between gap-4">
+      <div class="rounded-full p-3 input-background">
+        <img src="img/messenger.svg" alt="messenger" class="w-5 h-5">
+      </div>
+        <div class="rounded-full p-3 input-background">
+        <img src="img/bell.svg" alt="bell" class="w-5 h-5">
+      </div>
+      <div class="w-10">
+        <img class="rounded-full" src="img/my-photo.png" alt="my">
+      </div>
     </div>
   </header>
   <main class="pt-14">
@@ -127,12 +138,50 @@
           <div></div>
         </div>
 
+        <div class="bg-main-color p-6 rounded-lg">
+          <div class="text-2xl mb-4 font-semibold">Hobbies:</div>
+          <div class="flex flex-wrap items-center gap-2 mb-4">
+            <span class="px-4 py-1 rounded-lg input-background">Skateboarding</span>
+            <span class="px-4 py-1 rounded-lg input-background">Snowboarding</span>
+            <span class="px-4 py-1 rounded-lg input-background">Books</span>
+          </div>
+        </div>
+
+        <div class="bg-main-color p-6 rounded-lg">
+          <div class="text-2xl mb-4 font-semibold">Photo:</div>
+          <div class="flex flex-wrap gap-2">
+            <div class="w-55">
+              <img src="img/my/1.jpeg" class="object-cover rounded-lg">
+            </div>
+            <div class="w-5/12">
+              <img src="img/my/2.jpeg" class="w-full rounded-lg">
+            </div>
+            <div class="">
+              <img src="img/my/3.jpeg" class="rounded-lg">
+            </div>
+            <div class="w-5/12">
+              <img src="img/my/4.jpeg" class=rounded-lg"">
+            </div>
+            <div class="w-5/12">
+              <img src="img/my/5.jpeg" class="rounded-lg">
+            </div>
+            <div class="">
+              <img src="img/my/6.jpeg" class="rounded-lg">
+            </div>
+          </div>
+        </div>
+
       </div>
 
       <!-- detail information about me -->
       <div class="col-start-3 col-end-6 space-y-4">
 
         <!-- items, history post -->
+        <div class="p-6 flex items-center justify-center gap-6 bg-main-color rounded-lg">
+          <div class="career w-1/2 main-color font-semibold text-xl">Career</div>
+          <div class="w-1/2 main-color font-semibold text-xl">Other</div>
+        </div>
+
         <div class="bg-main-color p-6 rounded-lg">
           <div class="flex justify-between items-center space-x-2 pb-2">
             <img src="img/my-photo.png" class="rounded-full h-10 w-10"  />
@@ -371,7 +420,6 @@
 
           </div>
         </div>
-
 
         <div class="bg-main-color p-6 rounded-lg">
           <!-- header -->
